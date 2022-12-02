@@ -1,0 +1,19 @@
+Parameters in the SELECT INTO Statement
+Columns list: We need to specify column we want to retrieve and insert into a new table.
+
+New_table: We can specify the new table name here. SQL Server creates a new table with columns mentioned in columns list. 
+We cannot replace an existing table using this. Table name should be unique.
+
+Tables: It contains a table from where we want to get records. We can have multiple tables defined here as well with proper
+Join clause
+WHERE conditions: We can filter records using Where clause. It is an optional clause.
+
+-----------SELECT INTO statement syntax-----------
+
+SELECT column1,column2...ColumnN
+INTO New_table
+FROM tables
+[Where conditions];
+
+--example--
+select * from STUD where branch="CSE";
